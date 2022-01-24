@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="UTF-8">
+    <title>Gurgle</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <style>
+        /* Navigation Bar */
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 25px 0px 16px;
+        }
+        #navbar-left {
+            margin-top: 8px;
+            margin-left: -28px;
+            transform: scale(0.75, 0.75);
+        }
+        #navbar-right {
+            margin-top: -3px;
+            margin-right: -60px;
+            display: flex;
+            transform: scale(0.75, 0.75);
+        }
+        .navbar-link {
+            font-family: arial, sans-serif;
+            font-size: 20px;
+            color: #222;
+            text-decoration: none;
+        }
+        #navbar-left > .navbar-link {
+            margin: 0px 13px;
+        }
+        #navbar-right > .navbar-link {
+            font-size: 17.5px;
+            margin-right: 20px;
+            margin-top: 17px;
+        }
+        .navbar-link:hover {
+            text-decoration: underline;
+        }
+        #apps-icon-wrapper {
+            padding: 15px 15px 10px 15px;
+            margin-top: -5px;
+        }
+        #apps-icon-wrapper:hover {
+            background-color: #e8e6e6;
+            border-radius: 50%;
+        }
+        #apps-icon {
+            font-size: 32px;
+            color: #5f6368;
+        }
+        #sign-in {
+            text-decoration: none;
+            background-color: #1a73e8;
+            color: white;
+            font-family: 'Roboto', arial, sans-serif;
+            font-size: 21px;
+            padding: 11px 36px 16px 36px;
+            margin: 4px 1px 8px 17px;
+            border-radius: 6px;
+            box-shadow: none;
+        }
+        #sign-in:hover {
+            background-color: #2b7de9;
+            box-shadow: 2px 2px 4px rgba(66,133,244,0.3),
+                        -1px 2px 4px rgba(66,133,244,0.3);
+        }
+
+        /* Middle Content */
+        #middle-content {
+            display: flex;
+            flex-direction: column;
+        }
+        #google-wrapper {
+            display: flex;
+            justify-content: center;
+            transform: scale(0.35, 0.35);
+            margin-top: -60px;
+            margin-bottom: -55px;
+        }
+        #searchbar-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        #searchbar {
+            border: 1px solid black;
+            width: 578px;
+            height: 43px;
+            border-radius: 25px;
+            border-color: #e4e6e8;
+        }
+        #searchbar:hover {
+            box-shadow: 0.8px 0.8px 4px #cdcdcd;
+        }
+        #search-icon {
+            margin-top: 10px;
+            margin-left: 10px;
+            transform: scale(0.83, 0.83);
+            color: #828385;
+        }
+        #searchbar-input {
+            border: none;
+            width: 523px;
+            position: relative;
+            bottom: 7px;
+            font-size: 15px;
+        }
+        #searchbar-input:focus {
+            outline: none;
+        }
+        .bottom-btn {
+            border-width: 0px;
+            box-shadow: none;
+            width: 10.5em;
+            height: 34px;
+            margin: 30px 10px 50px 0px;
+            font-size: 13px;
+            border-radius: 3.5px;
+            background-color: #f8f9fa;
+        }
+        .bottom-btn:hover {
+            box-shadow: 0.2px 0.2px 2px #a7aaaa;
+            cursor: pointer;
+        }
+        #google-search-btn {
+            width: 9.6em;
+        }
+        #bottom-btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /* Footer */
+        #footer {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 20px 2px 35px;
+            left: 0;
+            background-color: #f2f2f2;
+        }
+        .footer-link {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            color: #70757a;
+            margin-right: 20px;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        #leaf-icon {
+            transform: scale(0.68, 0.68);
+            margin-bottom: 4px;
+        }
+        #footer-center {
+            display: flex;
+            position: relative;
+            left: -55px;
+            top: -3px;
+        }
+        #footer-center .footer-link {
+            margin-top: 5px;
+        }
+    </style>
+
+    <body>
+        <!-- Navigation bar -->
+        <div id="navbar">
+            <div id="navbar-left">
+                <a class="navbar-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-navbar">About</a>
+                <a class="navbar-link" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+            </div>
+            <div id="navbar-right">
+                <a class="navbar-link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                <a class="navbar-link" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                <a href="">
+                    <div id="apps-icon-wrapper">
+                        <i class="material-icons" id="apps-icon">apps</i>
+                    </div>
+                </a>
+                <a id="sign-in" href="">Sign in</a>
+            </div>
+        </div>
+
+        <!-- Middle content -->
+        <div id="middle-content">
+            <div id="google-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" alt="google logo">
+            </div>
+            <div id="searchbar-wrapper">
+                <div id="searchbar">
+                    <i class="material-icons" id="search-icon">search</i>
+                    <input type="text" id="searchbar-input">
+                </div>
+            </div>
+            <div id="bottom-btn-container">
+                <button type="button" class="bottom-btn" id="google-search-btn">Google Search</button>
+                <button type="button" class="bottom-btn">I'm Feeling Lucky</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div id="footer-left">
+                <a class="footer-link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="footer-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a class="footer-link" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </div>
+            <div id="footer-center">
+                <div id="leaf-icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="leaf">
+                </div>
+                <a class="footer-link" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                    Carbon neutral since 2007</a>
+            </div>
+            <div id="footer-right">
+                <a class="footer-link" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+                <a class="footer-link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+                <a class="footer-link" href="https://support.google.com/accounts/answer/3118621?hl=en">Settings</a>         
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
